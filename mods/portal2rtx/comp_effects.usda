@@ -98,6 +98,7 @@ This parameter is unused."""
                     hidden = false
                     renderType = "texture_2d"
                 )
+                bool inputs:enable_albedo_emission = 1
                 bool inputs:enable_emission = 1 (
                     customData = {
                         bool default = 0
@@ -105,15 +106,6 @@ This parameter is unused."""
                     displayGroup = "Emission"
                     displayName = "Enable Emission"
                     doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                bool inputs:enable_thin_film = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Iridescence"
-                    displayName = "Enable Iridescence"
-                    doc = "Adds a thin film coating to the material"
                     hidden = false
                 )
                 bool inputs:inverted_blend = 0 (
@@ -815,6 +807,7 @@ This parameter is unused."""
                     hidden = false
                     renderType = "texture_2d"
                 )
+                custom bool inputs:enable_albedo_emission = 1
                 bool inputs:enable_emission = 1 (
                     customData = {
                         bool default = 0
@@ -824,7 +817,6 @@ This parameter is unused."""
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                custom bool inputs:enable_thin_film = 1
                 bool inputs:inverted_blend = 0 (
                     customData = {
                         bool default = 0
@@ -929,6 +921,7 @@ This parameter is unused."""
                     hidden = false
                     renderType = "texture_2d"
                 )
+                custom bool inputs:enable_albedo_emission = 1
                 bool inputs:enable_emission = 1 (
                     customData = {
                         bool default = 0
@@ -938,7 +931,6 @@ This parameter is unused."""
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                custom bool inputs:enable_thin_film = 1
                 bool inputs:inverted_blend = 0 (
                     customData = {
                         bool default = 0
@@ -979,7 +971,7 @@ This parameter is unused."""
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                bool inputs:enable_thin_film = 1 (
+                bool inputs:enable_albedo_emission = 1 (
                     customData = {
                         bool default = 0
                     }
@@ -1372,9 +1364,32 @@ This parameter is unused."""
                 custom int inputs:alpha_test_type = 4
                 custom bool inputs:blend_enabled = 1
                 custom int inputs:blend_type = 0
-                custom float inputs:metallic_constant = 0.935
+                custom float inputs:metallic_constant = 0.26999998
                 custom float inputs:reflection_roughness_constant = 1
                 custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_40A766B64E63562E"
+        {
+            over "Shader"
+            {
+                custom bool inputs:blend_enabled = 1
+                custom int inputs:blend_type = 0
+                custom float inputs:emissive_intensity = 0.001
+                custom bool inputs:enable_emission = 1
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_E48ADD201AC0CFFC_20"
+        {
+            over "mesh"
+            {
+                token visibility = "inherited"
             }
         }
     }

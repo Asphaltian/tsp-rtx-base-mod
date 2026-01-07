@@ -310,7 +310,7 @@ over "RootNode"
             over "Shader"
             {
                 custom float inputs:emissive_intensity = 0.1
-                custom bool inputs:enable_thin_film = 1
+                custom bool inputs:enable_albedo_emission = 1
             }
         }
     }

@@ -679,6 +679,10 @@ over "RootNode"
                 custom uniform bool remix_category:world_ui = 0
             }
         }
+
+        over "mesh_1CC92A28515D2184"
+        {
+        }
     }
 
     over "Looks"
@@ -1313,7 +1317,7 @@ over "RootNode"
                 custom int inputs:blend_type = 0
                 custom color3f inputs:diffuse_color_constant = (0.9999942, 1, 0.99999)
                 asset inputs:diffuse_texture = @@
-                custom color3f inputs:emissive_color_constant = (0.969112, 0.9420969, 0.84189266)
+                custom color3f inputs:emissive_color_constant = (0.96862745, 0.9411765, 0.84313726)
                 custom float inputs:emissive_intensity = 10
                 custom asset inputs:emissive_mask_texture = @@
                 custom bool inputs:enable_emission = 1
@@ -1322,7 +1326,7 @@ over "RootNode"
                 custom asset inputs:normalmap_texture = @@
                 custom float inputs:opacity_constant = 1
                 custom float inputs:reflection_roughness_constant = 1
-                custom bool inputs:use_legacy_alpha_state = 1
+                custom bool inputs:use_legacy_alpha_state = 0
             }
         }
 
@@ -1374,8 +1378,8 @@ over "RootNode"
                 custom bool inputs:blend_enabled = 1
                 custom color3f inputs:emissive_color_constant = (0.29411766, 0.7019608, 0.8235294)
                 custom float inputs:emissive_intensity = 0.58
+                custom bool inputs:enable_albedo_emission = 1
                 custom bool inputs:enable_emission = 1
-                custom bool inputs:enable_thin_film = 1
                 custom float inputs:reflection_roughness_constant = 0.325
                 custom bool inputs:use_legacy_alpha_state = 0
             }
@@ -1389,8 +1393,8 @@ over "RootNode"
                 custom bool inputs:blend_enabled = 1
                 custom color3f inputs:emissive_color_constant = (0.29803923, 0.69803923, 0.827451)
                 custom float inputs:emissive_intensity = 0.58
+                custom bool inputs:enable_albedo_emission = 1
                 custom bool inputs:enable_emission = 1
-                custom bool inputs:enable_thin_film = 1
                 custom float inputs:reflection_roughness_constant = 0.32
                 custom bool inputs:use_legacy_alpha_state = 0
             }
@@ -1494,8 +1498,8 @@ over "RootNode"
                 custom int inputs:blend_type = 3
                 custom color3f inputs:emissive_color_constant = (0.992278, 0.992268, 0.992268)
                 custom float inputs:emissive_intensity = 0.2
+                custom bool inputs:enable_albedo_emission = 1
                 custom bool inputs:enable_emission = 1
-                custom bool inputs:enable_thin_film = 1
                 custom bool inputs:use_legacy_alpha_state = 0
             }
         }
@@ -1544,8 +1548,19 @@ over "RootNode"
                 custom int inputs:blend_type = 3
                 custom color3f inputs:emissive_color_constant = (0.9498069, 0.9254026, 0.8544595)
                 custom float inputs:emissive_intensity = 0.3
-                custom bool inputs:enable_thin_film = 1
+                custom bool inputs:enable_albedo_emission = 1
                 custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_B6A53DBA022D0CAD"
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 2.2
+                custom bool inputs:thin_walled = 0
+                custom float inputs:transmittance_measurement_distance = 2
+                custom bool inputs:use_diffuse_layer = 0
             }
         }
     }

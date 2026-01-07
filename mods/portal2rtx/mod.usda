@@ -3,8 +3,6 @@
     customLayerData = {
         string lightspeed_game_name = "Portal 2 - RTX"
         string lightspeed_layer_type = "replacement"
-        dictionary lightspeed_mod_dependencies = {
-        }
         string lightspeed_mod_name = "portal2rtx"
         string lightspeed_mod_notes = """base remix mod created for: https://github.com/xoxor4d/p2-rtx
 made by: github.com/xoxor4d"""

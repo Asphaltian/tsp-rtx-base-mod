@@ -401,6 +401,33 @@ over "RootNode"
                 custom bool inputs:use_diffuse_layer = 0
             }
         }
+
+        over "mat_000000001B3478F9" (
+            references = @./materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom asset inputs:normalmap_texture = @./assets/textures_world/water/water_slow_shallow_16x4_OTH_Normal.n.rtex.dds@
+                custom int inputs:sprite_sheet_cols = 16
+                custom int inputs:sprite_sheet_fps = 24
+                custom int inputs:sprite_sheet_rows = 4
+            }
+        }
+
+        over "mat_00000000D50969E2" (
+            references = @./materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom asset inputs:normalmap_texture = @./assets/textures_world/water/water_turbolent_01_16x4_OTH_Normal.n.rtex.dds@
+                custom int inputs:sprite_sheet_cols = 16
+                custom int inputs:sprite_sheet_fps = 24
+                custom int inputs:sprite_sheet_rows = 4
+                custom float inputs:transmittance_measurement_distance = 5
+            }
+        }
     }
 }
 
