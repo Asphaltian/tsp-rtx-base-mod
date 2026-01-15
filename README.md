@@ -1,6 +1,6 @@
-## Base Remix-Mod for the Portal 2 RTX Remix Compatibility Mod
+## Base Remix-Mod for The Stanley Parable RTX Remix Compatibility Mod
 
-This is an actual __remix__ mod for Portal 2. It is meant as a base for the Portal 2 RTX Remix Compatibility Mod.  
+This is an actual __remix__ mod for The Stanley Parable. It is meant as a base for The Stanley Parable RTX Remix Compatibility Mod.  
 
 <br>
 
@@ -15,8 +15,8 @@ It handles:
 
 ### Installation
 
-- [Download repo as zip](https://github.com/xoxor4d/p2-rtx-base-mod/archive/refs/heads/master.zip)
-- Place the `mods` folder into the `rtx-remix` folder found in the Portal 2 root folder  
+- [Download repo as zip](https://github.com/Asphaltian/tsp-rtx-base-mod/archive/refs/heads/master.zip)
+- Place the `mods` folder into the `rtx-remix` folder found in The Stanley Parable root folder  
 (see Folder Structure below)
 
 <br>
@@ -32,17 +32,15 @@ It handles:
 ├─ ...
 ├─ 📁 steamapps
 │  └─📁 common
-│     └─📁 Portal 2
-│       ├── 📜 p2-rtx-launcher.exe
-│       ├── 📜 portal2.exe
+│     └─📁 The Stanley Parable
+│       ├── 📜 tsp-rtx-launcher.exe
+│       ├── 📜 stanley.exe
 │       ├── 📜 ...
 │       │
-│       ├── 📁 portal2_dlc3
-│       ├── 📁 portal2-rtx
+│       ├── 📁 thestanleyparable-rtx
 │       └── 📁 rtx-remix
 │           └─📁 mods
-│             └─📁 portal2rtx
-│               ├── 📜 portals.usda
+│             └─📁 thestanleyparablertx
 │               ├── 📜 mod.usda
 │               └── ...
 └── ...  
